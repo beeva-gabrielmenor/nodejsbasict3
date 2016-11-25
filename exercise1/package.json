@@ -1,0 +1,19 @@
+{
+  "name": "excercise",
+  "version": "1.0.0",
+  "description": "Simple example to work around with modules exportation, timeouts and events",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "beeva",
+    "basic",
+    "t3"
+  ],
+  "author": "Alberto Blanco Pizarro, Juan Ferrer García",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
