@@ -1,7 +1,6 @@
 'use strict';
 
-var commandLineArgs = require('command-line-args'),
-	tweeterEmitter = require('./tweeterMock');
+//TODO: Import tweeterMock module
 
 var tweeterListener = function (nickname, tweet) {
 	return () => {
@@ -19,6 +18,5 @@ if(!nickname && !tweet) {
 }
 
 // TODO add a listener that listens 'tweetSent' Event from tweeterEmitter
-tweeterEmitter.on('tweetSent', tweeterListener(nickname, tweet));
 
 tweeterEmitter.sendTweet(nickname, tweet);

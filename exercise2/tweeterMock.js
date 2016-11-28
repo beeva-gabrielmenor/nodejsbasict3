@@ -8,6 +8,6 @@ module.exports = {
 	},
 	sendTweet : function (nickname, tweet) {
 		console.log(nickname + " tweets: " + tweet);
-		eventEmitter.emit('tweetSent', nickname, tweet);
+		eventEmitter.emit('tweetSent', {nickname, tweet});
 	}
 };
