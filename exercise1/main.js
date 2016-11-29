@@ -5,7 +5,7 @@ const eventEmitter = require('events');
 const myEventEmitter = new eventEmitter();
 
 function listener() {
-	console.log('Coming...');
+console.log('Coming...');
 }
 
 // TODO Write an interval that emits every second 'ringbell' event with 'ring ring' tone as parameter
@@ -14,6 +14,15 @@ setInterval(() => {
 }, 1000);
 
 // TODO add an event listener with .on() method that listens 'ringbell' event and prints given tone
-	console.log(tone);
+
+
+myEventEmitter.on('ringbell', (tone)=> console.log(tone));
+	
 
 //TODO: dd an event listener with .on() method that listens 'ringbell' event and calls listener method
+
+//var listner1 = {} => console.log(tone);
+myEventEmitter.on('ringbell',listener);
+
+
+
